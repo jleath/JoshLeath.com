@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+  <link rel="manifest" href="./site.webmanifest">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;700&display=swap" rel="stylesheet">
+  <link href="../dist/output.css" rel="stylesheet">
+  <title>Josh Leath</title>
+</head>
+<body class="bg-slate-200">
+  <header class="fixed top-0 right-0">
+    <nav>
+      <ul class="flex flex-row sm:flex-col items-center m-1">
+        <li class="bg-cyan-900 rounded-full w-12 m-2 shadow-lg"><a href="./josh-leath-resume-2022.pdf" target="_blank"><img class="p-1" src="./images/icons/resume-icon.svg" alt="resume icon"></a></li>
+        <li class="bg-cyan-900 rounded-full w-12 m-2 shadow-lg"><a href="https://github.com/jleath" target="_blank"><img class="p-1" src="./images/icons/github-icon.svg" alt="github logo"></a></li>
+        <li class="bg-cyan-900 rounded-full w-12 m-2 shadow-lg"><a href="https://www.linkedin.com/in/joshua-leath/" target="_blank"><img class="p-1" src="./images/icons/linkedin-icon.svg" alt="linkedin logo"></a></li>
+      </ul>
+    </nav>
+  </header>
+  <section class="flex flex-col items-center justify-center h-screen mb-8">
+    <div class="bg-white rounded-md p-12 h-full lg:h-auto w-full lg:w-6/12 flex flex-col items-center justify-center text-center shadow-lg">
+      <img class="m-2 rounded-full w-64" src="./images/jleath_photo.jpeg">
+      <h1 class="m-2 text-4xl font-bold">Josh Leath</h1>
+      <p class="m-2 text-xl w-full sm:w-10/12">I am a software engineer with multiple years of experience with Ruby, JavaScript, Go and various frameworks.</p>
+      <p class="m-2 text-xl w-full sm:w-10/12">I recently built <a href="https://chimera-deploy.dev" target="_blank"><span class="font-bold text-amber-600">Chimera</span></a>, an open-source tool for automating canary deployments of containerized microservices.</p>
+    </div>
+  </section>
+  <section class="flex flex-col justify-center items-center mb-8 p-8 w-10/12">
+    <div class="h-full lg:h-auto w-full lg:w-10/12 flex flex-col md:flex-row justify-center items-center">
+      <div class="flex flex-col w-5/12 items-center">
+        <img class="hidden md:block" src="./images/chimera/chimera-infra-black.png" alt="chimera infrastructure diagram">
+      </div>
+      <div class="flex p-8 flex-col w-full md:w-7/12 text-xl items-center text-center">
+        <img class="w-4/12" src="./images/chimera/chimera-color-logo.png" alt="Chimera logo">
+        <p class="mb-4"><span class="font-bold text-amber-600">Chimera</span> is an open-source tool for performing automated canary deployments of containerized microservices, allowing software development teams to safely and easily deploy new versions of their code by taking advantage of the features provided by their existing service mesh.</p>
+        <p>Chimera is built with Node.js and is made available as a containerized web application with a React front end user interface, and an express app backend that handles managing AWS resources.</p>
+        <a class="mt-8 p-6 rounded-xl bg-cyan-900 text-white font-bold" href="https://chimera-deploy.dev" target="_blank">Read the Case Study</a> 
+      </div>
+    </div>
+  </section>
+  <section class="text-center">
+    <div class="p-12 w-full">
+      <h2 class="text-4xl font-bold mb-8">Other Projects</h2>
+      <div class="flex justify-center">
+        <ul class="flex flex-wrap justify-around w-full md:w-5/6 text-center">
+          <li class="w-5/6 sm:w-80 m-2 p-2 bg-white shadow-lg min-h-project-card">
+            <img src="./images/projects/meridian.png">
+            <div class="flex flex-col items-center p-2">
+              <h2 class="text-lg m-2">Meridian</h2>
+              <p>A deep space object tracker that displays visible Messier objects based on the user's location. Built using React, Express, PostgreSQL, and MongoDB. Deployed on a DigitalOcean VPS.</p>
+            </div>
+          </li>
+          <li class="w-5/6 sm:w-80 m-2 p-2 bg-white shadow-lg items-center rounded min-h-project-card">
+            <img src="./images/projects/chip8JS.png">
+            <div class="flex flex-col items-center p-2">
+              <h2 class="text-lg m-2">Chip8JS</h2>
+              <p>A browser-based interpreter for the Chip-8 programming language. Built using JavaScript.</p>
+            </div>
+          </li>
+          <li class="w-5/6 sm:w-80 m-2 p-2 bg-white shadow-lg items-center rounded min-h-project-card">
+            <img src="./images/projects/chip8-debug.png">
+            <div class="flex flex-col items-center p-2">
+              <h2 class="text-lg m-2">Chip8-debug</h2>
+              <p>A command line debugger for the Chip-8 programming language. Features breakpoints, a memory inspector and code disassembler. Built using Node and the blessed npm package.</p>
+            </div>
+          </li>
+          <li class="w-5/6 sm:w-80 m-2 p-2 bg-white shadow-lg rounded min-h-project-card">
+            <img src="./images/projects/requesto.png">
+            <div class="flex flex-col items-center p-2">
+              <h2 class="text-lg m-2">Requesto</h2>
+              <p>Webhook and HTTP request visualizer for viewing and debugging network communication built using React, Express, PostgreSQL, and MongoDB.</p>
+            </div>
+          </li>
+          <li class="w-5/6 sm:w-80 m-2 p-2 bg-white shadow-lg rounded min-h-project-card">
+            <img src="./images/projects/reaction.png">
+            <div class="flex flex-col items-center p-2">
+              <h2 class="text-lg m-2">Reaction</h2>
+              <p>A trello-like app for managing projects. Built using React/Redux, Express and MongoDB.</p>
+            </div>
+          </li>
+          <li class="w-5/6 sm:w-80 m-2 p-2 bg-white shadow-lg rounded min-h-project-card">
+            <img src="./images/projects/schemeedit.png">
+            <div class="flex flex-col items-center p-2">
+              <h2 class="text-lg m-2">SchemeEdit</h2>
+              <p>A browser-based text editor for the Scheme Programming language featuring basic syntax highlighting and bracket matching. Built with JavaScript.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <footer class="bg-cyan-900 w-full text-center h-64 flex flex-col items-center justify-center">
+    <p class="w-8/12 text-2xl text-white mb-8">I am currently open to new opportunities, so please reach out if you think I would be a good fit for your team!</p>
+    <p class="w-8/12 underline text-2xl text-white"><a href="mailto:joshua.leath@icloud.com">joshua.leath@icloud.com</a></p>
+    <ul>
+      <li></li>
+    </ul>
+  </footer>
+</body>
+</html>
