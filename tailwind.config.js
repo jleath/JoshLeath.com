@@ -7,8 +7,8 @@ module.exports = {
     minHeight: {
       'project-card': '375px',
     },
-    colors: {
-      'chimera-green': '#66ac9a',
+    minWidth: {
+      'chimera-logo': '190px',
     },
     extend: {},
   },
